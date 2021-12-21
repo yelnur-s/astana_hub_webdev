@@ -1,0 +1,16 @@
+.students-item {
+    width: 100%;
+    display: flex;
+}
+
+.students-item>div {
+    width: 20%;
+}
+
+.edit-form {
+    display: none;
+}
+
+.edit-form.active {
+    display: flex;
+}

@@ -1,0 +1,127 @@
+.header-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60.6px;
+}
+
+.header-info a{
+    color: black;
+    margin: 0 15px;
+}
+
+.header-info a:hover{
+    cursor: pointer;
+    color: #b3b333;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    background-color:#fff;
+    /* padding: 0 5%; */
+    align-items: center;
+    height: 131px;
+    /* padding-top: 30px !important;
+    padding-bottom: 30px !important; */
+    /* указываем важность (использовать в крайних случ) */
+
+}
+
+.logo{
+    height: 71px;
+}
+
+.search{
+    height: 45px;
+    background-color: #f4f4f4;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.search img{
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+}
+
+.search input{
+    border: none;
+    background-color: transparent;
+    /* прозрачный */
+    outline: none;
+    width: 400px;
+}
+
+.search button{
+    border: none;   
+    font: 700 14px "Mazzard Soft H";
+    background-color: transparent;
+}
+
+.search button:hover{
+    color: #bac34e;
+    cursor: pointer;
+}
+
+.header-icons{
+    display: flex;
+    
+}
+
+.header-icons span{
+    height: 45px;
+    width: 45px;
+    background-color: #f6fef3;
+    border-radius: 50%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: .4s;
+}
+
+.header-icons span:first-child{
+    background-color: #e8f8f7;
+}
+
+
+.header-icons span:last-child{
+    background-color: #f3e4dc;
+}
+
+.header-icons img{
+    height: 16px;
+    width: 16px;
+    transition: .4s;
+}
+
+.header-icons i{
+    background-color: #e0bf96;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -2px;
+    left: 32px;
+    font-size: 13px;
+}
+
+.header-icons span:hover{
+    background-color: #bac34e;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.header-icons span:hover img{
+    filter: invert(1);
+    /* фильтр для png формата меняет на противоположный цвет картинки */
+    transition: .4s;
+}

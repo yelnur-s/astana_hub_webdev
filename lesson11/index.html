@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="text" placeholder="Name" id="name">
+    <input type="number" placeholder="Age" id="age">
+    <input type="number" placeholder="GPA" id="gpa">
+    <button id="add-button"> Add </button>
+
+
+
+    <br>
+    <br>
+    <input type="text" placeholder="search" id="search" onkeyup="search()">
+    <div class="students-header">
+        <div class="students-item">
+            <div>NR</div>
+            <div>Name</div>
+            <div>Age</div>
+            <div>GPA</div>
+            <div>Actions</div>
+        </div>
+    </div>
+    <div id="students" class="students">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

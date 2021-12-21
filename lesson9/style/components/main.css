@@ -1,0 +1,222 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.main-slider {
+    background-image: url('../../img/main-first-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 66%;
+    height: 35vw;
+    min-height: 300px;
+    margin-right: 30px;
+    border-radius: 4px;
+    padding: 15% 10%;
+    position: relative;
+}
+
+.main-slider h4 {
+    font-family: 'Dancing Script', cursive;
+    color: #bac34e;
+}
+
+.main-slider h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #0a472e;
+    line-height: 1.2;
+}
+
+.slider-arrows {
+    width: 105px;
+    position: absolute;
+    bottom: 60px;
+    right: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-arrows span {
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 16px 17px 16px 17px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-arrows span:hover {
+    background-color: #bac34e;
+    cursor: pointer;
+}
+
+.slider-arrows span.right-arrow {
+    transform: rotate(180deg);
+}
+
+.shop-link a {
+    transition: 400ms;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #000;
+    font-weight: 700;
+    margin-top: 5%;
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
+}
+
+.shop-link:hover a {
+    transition: 400ms;
+    color: #bac34e;
+    border-color: #bac34e;
+}
+
+.shop-link:hover img {
+    transition: 400ms;
+    margin-left: 5px;
+    filter: invert(70%) sepia(5%) saturate(4190%) hue-rotate(25deg) brightness(111%) contrast(77%);
+}
+
+.shop-link img {
+    transition: 400ms;
+    width: 12px;
+    height: 12px;
+}
+
+.main-info {
+    width: calc(34% - 30px);
+}
+
+.main-info--one {
+    background-image: url('../../img/main-second.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(50% - 15px);
+    margin-bottom: 30px;
+    border-radius: 4px;
+    padding: 10% 0 0 10%;
+    position: relative;
+}
+
+.main-info--one h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #0a472e;
+    width: 50%;
+}
+
+.main-info--one div.shop-link {
+    position: absolute;
+    bottom: 10%;
+}
+
+.main-info--two {
+    background-image: url('../../img/main-third.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(50% - 15px);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-info--two a img {
+    height: 12px;
+}
+
+.main-info--two h4 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.main-info--two h3 {
+    font-size: 40px;
+    color: #f4ed23;
+    margin-bottom: 10px;
+}
+
+.main-info--two p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.main-info--two a {
+    transition: 400ms;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 38px;
+    background-color: #bac34e;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.main-info--two a img {
+    transition: 400ms;
+    padding-left: 5px;
+    filter: invert(1);
+}
+
+.main-info--two a:hover {
+    transition: 400ms;
+    background-color: #fff;
+    color: #bac34e;
+}
+
+.main-info--two a:hover img {
+    transition: 400ms;
+    filter: invert(70%) sepia(5%) saturate(4190%) hue-rotate(25deg) brightness(111%) contrast(77%);
+}
+
+@media (max-width: 1200px) {
+    .main-slider h1,
+    .main-info--two h3 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+    .main-info--one h3,
+    .main-info--two h4 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    .main-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .main-slider {
+        width: 100%;
+    }
+    .main-info--one,
+    .main-info--two {
+        width: calc(50% - 15px);
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 650px) {
+    .main-info--one,
+    .main-info--two {
+        width: 100%;
+        min-height: 200px;
+    }
+    .main-info {
+        flex-direction: column;
+    }
+}

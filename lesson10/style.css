@@ -1,0 +1,8 @@
+.students-item {
+    width: 100%;
+    display: flex;
+}
+
+.students-item>div {
+    width: 20%;
+}

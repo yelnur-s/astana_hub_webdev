@@ -1,0 +1,17 @@
+.header-info {
+    /* rgb(252, 243, 234); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.header-info a {
+    margin: 0 15px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.header-info a:hover {
+    color: #bac34e
+}

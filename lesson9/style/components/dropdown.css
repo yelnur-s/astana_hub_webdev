@@ -1,0 +1,23 @@
+.dropdown {
+    position: absolute;
+    background-color: #fff;
+    top: 60px;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+    box-shadow: 0 0.5px 0 rgba(0, 0, 0, .24);
+    padding: 20px;
+    z-index: -1;
+    opacity: 0;
+    transition: .4s;
+}
+
+.nav-right a:hover .dropdown {
+    z-index: 10;
+    opacity: 1;
+    top: 50px;
+}
+
+.dropdown-list li {
+    color: #000;
+}
